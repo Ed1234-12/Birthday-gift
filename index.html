@@ -1,4 +1,31 @@
-<p>
+// Blue birthday background
+document.body.style.background =
+    "linear-gradient(135deg, #008cff, #005bea, #66d9ff)";
+
+document.body.style.overflow = "hidden";
+
+// Birthday decorations
+const decorations = ["🫧", "🎁", "🎈", "🫧", "🎁", "✨"];
+
+setInterval(function () {
+    const decoration = document.createElement("div");
+
+    decoration.innerHTML =
+        decorations[Math.floor(Math.random() * decorations.length)];
+
+    decoration.style.position = "fixed";
+    decoration.style.left = Math.random() * 100 + "vw";
+    decoration.style.top = Math.random() * 100 + "vh";
+    decoration.style.fontSize = (25 + Math.random() * 35) + "px";
+    decoration.style.zIndex = "-1";
+    decoration.style.opacity = "0.8";
+
+    document.body.appendChild(decoration);
+
+    setTimeout(function () {
+        decoration.remove();
+    }, 6000);
+}, 500);<p>
         
 Eshi wamisha sahilu mindaye ,  I am so glad that I am still your friend on your special day, I am so lucky bena.
 Sometimes I don't think u know ena understand how much u mean to me really, I don't think u do , ur a literal prayer answer(God sent your annoying ass tseloten semto),ur the first human being I wanna call whenever I embarrass my self , ur the closest human in the history of humans that ever got close to me if that makes sense, ena ur a literal blessing  that I don't want to take for granted. Ur existence destegna kemiyaregachew sewoch wist I might be on the front.
@@ -52,7 +79,7 @@ Bicha malet new I'm glad I am still in ur life, I am so glad that the fights we 
 
     <div class="card">
 
-        <h2>Ena on this special day I want you to know that you are loved,appriciated and betam betam valued and do not ever doubt my blackness for you.</h2>
+        <h2>Ena on this special day I want you to know that you are loved,appreciated and betam betam valued and do not ever doubt my blackness for you.</h2>
 
      
 
@@ -70,9 +97,7 @@ Bicha malet new I'm glad I am still in ur life, I am so glad that the fights we 
         <h2>❤️ One More Thing...</h2>
 
         <p class="message">
-            Thank you for all the wonderful memories.
-            Here's to another year of happiness, adventures,
-            laughter and unforgettable moments! 🥂✨(AI new yihen yetsafew)
+            Thank you for everything.✨
         </p>
 
         <div style="font-size:45px;">
