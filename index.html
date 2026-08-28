@@ -1,31 +1,4 @@
-// Blue birthday background
-document.body.style.background =
-    "linear-gradient(135deg, #008cff, #005bea, #66d9ff)";
-
-document.body.style.overflow = "hidden";
-
-// Birthday decorations
-const decorations = ["🫧", "🎁", "🎈", "🫧", "🎁", "✨"];
-
-setInterval(function () {
-    const decoration = document.createElement("div");
-
-    decoration.innerHTML =
-        decorations[Math.floor(Math.random() * decorations.length)];
-
-    decoration.style.position = "fixed";
-    decoration.style.left = Math.random() * 100 + "vw";
-    decoration.style.top = Math.random() * 100 + "vh";
-    decoration.style.fontSize = (25 + Math.random() * 35) + "px";
-    decoration.style.zIndex = "-1";
-    decoration.style.opacity = "0.8";
-
-    document.body.appendChild(decoration);
-
-    setTimeout(function () {
-        decoration.remove();
-    }, 6000);
-}, 500);<p>
+<p>
         
 Eshi wamisha sahilu mindaye ,  I am so glad that I am still your friend on your special day, I am so lucky bena.
 Sometimes I don't think u know ena understand how much u mean to me really, I don't think u do , ur a literal prayer answer(God sent your annoying ass tseloten semto),ur the first human being I wanna call whenever I embarrass my self , ur the closest human in the history of humans that ever got close to me if that makes sense, ena ur a literal blessing  that I don't want to take for granted. Ur existence destegna kemiyaregachew sewoch wist I might be on the front.
@@ -110,6 +83,42 @@ Bicha malet new I'm glad I am still in ur life, I am so glad that the fights we 
 
 
 <script>
+    // Blue birthday background
+document.body.style.background =
+    "linear-gradient(135deg, #0077ff, #00bfff, #0066ff)";
+
+document.body.style.backgroundAttachment = "fixed";
+
+// Floating birthday decorations
+const birthdayItems = ["🫧", "🎁", "🫧", "🎈", "🎁", "✨"];
+
+setInterval(function () {
+
+    const item = document.createElement("div");
+
+    item.innerHTML =
+        birthdayItems[Math.floor(Math.random() * birthdayItems.length)];
+
+    item.style.position = "fixed";
+    item.style.left = Math.random() * 100 + "vw";
+    item.style.bottom = "-60px";
+    item.style.fontSize = (25 + Math.random() * 35) + "px";
+    item.style.zIndex = "0";
+    item.style.pointerEvents = "none";
+    item.style.transition = "transform 8s linear, opacity 8s linear";
+
+    document.body.appendChild(item);
+
+    setTimeout(function () {
+        item.style.transform = "translateY(-110vh)";
+        item.style.opacity = "0";
+    }, 100);
+
+    setTimeout(function () {
+        item.remove();
+    }, 8500);
+
+}, 600);
 
 /* =========================================
    OPEN SURPRISE
