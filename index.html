@@ -1,0 +1,183 @@
+<p>
+        
+Eshi wamisha sahilu mindaye ,  I am so glad that I am still your friend on your special day, I am so lucky bena.
+Sometimes I don't think u know ena understand how much u mean to me really, I don't think u do , ur a literal prayer answer(God sent your annoying ass tseloten semto),ur the first human being I wanna call whenever I embarrass my self , ur the closest human in the history of humans that ever got close to me if that makes sense, ena ur a literal blessing  that I don't want to take for granted. Ur existence destegna kemiyaregachew sewoch wist I might be on the front.
+Bicha malet new I'm glad I am still in ur life, I am so glad that the fights we went throgh din't take us apart,I am so glad that ur not stuck in my past and i still get to cherish u today and I'll keep cherishing u as long as u last. U will always remain in my heart no matter what happens, u will still be that tsede sew. I Love you, I really really do. I have this huge blackness for you and I can't name it. 
+ May God keep ur soul safe in His arms, may He give u peace as u trust in Him, may He bless u be bizu bereket enen endebarekegn. I love you so so much.            </p>
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         PHOTO SECTION
+    ========================================== -->
+
+    <div class="card">
+
+        <h2>💗 Things I like about you</h2>
+
+        <p>I mean, It's not like u have any  <b>ሚጠላ ባህሪ 🤥</b></p>
+
+
+       <p>1.First thing ofc  <b>you are cute 😍🩷😻</b></p>
+
+
+        <div class="gallery" >
+
+            <!--
+            CHANGE THESE FILENAMES TO YOUR PHOTO FILENAMES.
+
+            Example:
+            photos/birthday.jpg
+            photos/memory1.jpg
+            photos/memory2.png
+            -->
+
+            <img src="photos.jpg" width="350" alt="Memory 1"> <p> 2.You are berry thoughtful and caring🌻 </p>
+            <img src="photo.jpg" width="400" alt="Memory 2"> <p> 3.You are photogenic✌️ </p>
+            <img src="photo3.jpg" width="350" alt="Memory 3"> <p>4. IDK why I added this one gn let's go with  <b>Tall</b></p>
+
+
+            <img src="photo4.jpg" width="350" alt="Memory 4">
+            
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         VIDEO SECTION
+    ========================================== -->
+
+    <div class="card">
+
+        <h2>🎥 Special Videos</h2>
+
+        <p>Ena on this special day I want you to know that you are loved,appriciated and betam betam valued and do not ever doubt my blackness for you <b>wokay!</b></p>
+
+        <!-- CHANGE THE FILENAMES IF NEEDED -->
+
+        <video controls>
+            <source src="videos/video1.mp4" type="video/mp4">
+            Your browser cannot play this video.
+        </video>
+
+        <video controls>
+            <source src="videos/video2.mp4" type="video/mp4">
+            Your browser cannot play this video.
+        </video>
+
+    </div>
+
+
+    <!-- Final message -->
+    <div class="card">
+
+        <h2>❤️ One More Thing...</h2>
+
+        <p class="message">
+            Thank you for all the wonderful memories.
+            Here's to another year of happiness, adventures,
+            laughter and unforgettable moments! 🥂✨
+        </p>
+
+        <div style="font-size:45px;">
+            🎈 🎂 🎉 ❤️ 🎁
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =========================================
+   OPEN SURPRISE
+========================================= */
+
+function openSurprise() {
+
+    document.getElementById("opening").style.display = "none";
+
+    createConfetti(180);
+
+}
+
+
+/* =========================================
+   CONFETTI
+========================================= */
+
+const colors = [
+    "#ff4d6d",
+    "#ffd166",
+    "#06d6a0",
+    "#118ab2",
+    "#ffffff",
+    "#c77dff",
+    "#ff85a1"
+];
+
+function createConfetti(amount) {
+
+    for (let i = 0; i < amount; i++) {
+
+        const piece = document.createElement("div");
+
+        piece.className = "confetti";
+
+        piece.style.left = Math.random() * 100 + "vw";
+
+        piece.style.background =
+            colors[Math.floor(Math.random() * colors.length)];
+
+        piece.style.animationDuration =
+            (Math.random() * 3 + 3) + "s";
+
+        piece.style.animationDelay =
+            (Math.random() * 1) + "s";
+
+        document.body.appendChild(piece);
+
+        setTimeout(function() {
+            piece.remove();
+        }, 7000);
+    }
+}
+
+
+/* =========================================
+   FLOATING HEARTS
+========================================= */
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+        (Math.random() * 3 + 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function() {
+        heart.remove();
+    }, 7000);
+}
+
+
+/* Hearts appear automatically */
+
+setInterval(createHeart, 1200);
+
+</script>
+
+</body>
+</html>
